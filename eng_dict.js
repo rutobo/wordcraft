@@ -10406,6 +10406,7 @@ const englishDictionaryData = [
     "dicamptodon",
     "dicamptodontidae",
     "dicentra",
+    "dice",
     "dicer",
     "diceros",
     "dichloride",
