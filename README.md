@@ -12,3 +12,11 @@ The game features:
 - Leaderboard to track high scores
 
 Built with HTML, CSS, and JavaScript, WORDCRAFT offers an engaging and competitive word-building experience.
+
+Credits for dictionaries:
+
+English words
+https://norvig.com/ngrams/
+
+Russian words:
+https://opencorpora.org/?page=export
