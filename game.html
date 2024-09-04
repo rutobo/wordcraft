@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDCRAFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="word-list player-one-words" id="wordListPlayerOne"></div>
+    <div class="word-list player-two-words" id="wordListPlayerTwo"></div>
+    <div class="container" id="container">
+        <div class="total-sum" id="totalSum">+0</div>
+        <div class="player-one" id="playerOne">
+            <div class="player-score">100</div>
+            <div class="player-name">Player One</div>
+        </div>
+        <div class="player-two" id="playerTwo">
+            <div class="player-score">100</div>
+            <div class="player-name">Player Two</div>
+        </div>
+    </div>
+    <div class="result-container" style="display: none;">
+        <h2>Game Over</h2>
+        <p id="playerOneFinalScore"></p>
+        <p id="playerTwoFinalScore"></p>
+        <button id="viewLeaderboardButton">View Leaderboard</button>
+        <button id="rematchButton">Rematch</button>
+    </div>
+    <button id="exitToMainMenu" class="exit-button">Exit Game</button>
+    <button id="pauseGame" class="pause-button">Pause Game</button>
+    <script src="rus_dict.js"></script>
+    <script src="eng_dict.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

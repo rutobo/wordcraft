@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            padding: 10px;
+            /* background-color: #f2f2f2; */
+        }
+        .leaderboard-container {
+            height: 500px; /* Fixed height of 300px */
+            overflow-y: auto;
+        }
+        #leaderboard {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #leaderboard th, #leaderboard td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        #leaderboard thead {
+            position: sticky;
+            top: 0;
+            background-color: #f2f2f2;
+        }
+        .footer {
+            padding: 10px;
+            /* background-color: #f2f2f2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Leaderboard</h2>
+    </div>
+    <div class="leaderboard-container">
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player One</th>
+                    <th>Score</th>
+                    <th>Player Two</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Scores will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <button id="backButton">Back to Main Page</button>
+        <button id="resetButton">Reset Leaderboard</button>
+    </div>
+    <script src="leaderboard.js"></script>
+</body>
+</html>

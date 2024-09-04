@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Player Names</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div clas="left-side">
+            <div class="game-name">WORDCRAFT</div>
+            <br>
+            <br>
+            <div class="controls">
+                Game Controls: <br>
+                • Left/Right Arrows: Navigate between letters <br>
+                • Up/Down Arrows: Change selected letter <br>
+                • Enter: Check word validity <br>
+                • Delete: Delete selected letter
+            </div>
+        </div>
+        <div class="right-side">
+            <div id="playerFormContainer" class="player-form-container">
+                <form id="playerForm">
+                    <div class="mb8px" for="playerOneName">Player One:</div>
+                    <input type="text" id="playerOneName" name="playerOneName" required>
+                    <br>
+                    <div class="mb8px" for="playerTwoName">Player Two:</div>
+                    <input type="text" id="playerTwoName" name="playerTwoName" required>
+                    <br>
+                    <div class="mb8px" for="languageSelect">Language:</div>
+                    <select id="languageSelect" name="languageSelect" class="mb8px">
+                        <option value="en">English</option>
+                        <option value="ru">Russian</option>
+                    </select>
+                    <br>
+                    <div class="mb8px" for="durationSelect">Game Duration:</div>
+                    <select id="durationSelect" name="durationSelect" class="mb8px">
+                        <option value="10">10 minutes</option>
+                        <option value="20">20 minutes</option>
+                        <option value="30">30 minutes</option>
+                    </select>
+                    <br>
+                    <button style="width: 100%;" type="submit">Start Game</button>
+                    <br>
+                </form>
+                <button id="leaderboardButton">Leaderboard</button>
+            </div>
+        </div>
+    </div>
+    <script src="leaderboard.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
